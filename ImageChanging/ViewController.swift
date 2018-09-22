@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     @objc func didTapBtn(_ sender:UIButton){
         if sender.isSelected{
@@ -41,9 +40,8 @@ class ViewController: UIViewController {
     
     
     @objc func displayImage(){
-        setImage()
+        getImage()
     }
-
 }
 
 extension ViewController {
@@ -76,5 +74,5 @@ extension Collection {
         let roll = randomNumber(inRange: 0...count-1)
         return self[index(startIndex, offsetBy: roll)]
     }
-    
 }
+ 
